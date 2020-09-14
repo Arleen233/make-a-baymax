@@ -17,7 +17,7 @@ const player = {
     n:1,
     init: ()=>{
         player.ui.code.innerText = string.substr(0, player.n);
-        player.ui.writeStyle.innerText = string.substr(0,player.n);
+        player.ui.writeStyle.innerHTML = string.substr(0,player.n);
         player.bindEvents();
         player.play();
     },
@@ -62,7 +62,6 @@ const player = {
     }
     
 }
-
 player.init()
 
 
